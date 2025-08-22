@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datan Utukana Malo - Premium Ethiopian Coffee Exporter | Oromia Guji Zone </title>
+    <meta name="description" content="Exporting premium Ethiopian coffee beans and leaves from Oromia Guji region. Licensed exporter of authentic Ethiopian coffee to worldwide markets.">
+    <meta name="keywords" content="coffee, ethiopian coffee, coffee exporter, ethiopia, oromia, gujii, guji, coffee beans, coffee leaves, dried coffee, undried coffee, ethiopian exports, oromo, oromoo, gujii oromoo, ethiopian coffee exports, coffee supplier, wholesale coffee, specialty coffee, yirgacheffe, sidamo, harar, limu, coffee farm, fair trade coffee, organic coffee, sustainable coffee, arabica coffee, robusta coffee, coffee industry, coffee trade, coffee market, coffee culture, coffee ceremony, ethiopian agriculture, ethiopian products">
+    <meta name="author" content="Datan Utukana Malo">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://yourwebsite.com/">
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Datan Utukana Malo - Premium Ethiopian Coffee Exporter | Oromia Guji Region">
+    <meta property="og:description" content="Exporting premium Ethiopian coffee beans and leaves from Oromia Guji region. Licensed exporter of authentic Ethiopian coffee to worldwide markets.">
+    <meta property="og:url" content="https://yourwebsite.com/">
+    <meta property="og:image" content="https://yourwebsite.com/path-to-your-image.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Datan Utukana Malo - Premium Ethiopian Coffee Exporter | Oromia Guji Region">
+    <meta name="twitter:description" content="Exporting premium Ethiopian coffee beans and leaves from Oromia Guji region. Licensed exporter of authentic Ethiopian coffee to worldwide markets.">
+    <meta name="twitter:image" content="https://yourwebsite.com/path-to-your-image.jpg">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #3E2723;
+            --secondary: #795548;
+            --accent: #DD6E42;
+            --light: #F5F5F5;
+            --dark: #1A120B;
+            --text: #333333;
+            --coffee-light: #A98274;
+            --coffee-dark: #4E342E;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box;}
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--light);
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+        }
+        .nav-menu {
+            display: flex;
+            list-style: none;
+        }
+        .nav-menu li {
+            margin-left: 1.5rem;
+        }
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .nav-menu a:hover {color: var(--accent);}
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-4.0.3') no-repeat center center/cover;
+            height: 100vh;
+            color: white;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            padding-top: 80px;
+        }
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            color: white;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 500;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .btn:hover {
+            background-color: #c55a34;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .section {
+            padding: 5rem 0;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .section-title h2 {
+            font-size: 2.5rem;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--accent);
+        }
+        .about-content {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+        }
+        .about-image {
+            flex: 1;
+            min-width: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s;
+        }
+        .about-image img:hover {
+            transform: scale(1.05);
+        }
+        .licenses {
+            background-color: #f9f5f0;
+        }
+        .licenses-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .license-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .license-card:hover {
+            transform: translateY(-10px);
+        }
+        .license-image {
+            height: 350px;
+            overflow: hidden;
+            position: relative;
+        }
+        .license-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        .license-card:hover .license-image img {
+            transform: scale(1.1);
+        }
+        .watermark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-weight: 500;
+        }
+        .license-card:hover .watermark {
+            opacity: 1;
+        }
+        .license-info {
+            padding: 1.5rem;
+            text-align: center;
+        }
+        .license-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .products {
+            background-color: #f9f5f0;
+        }
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .product-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+        .product-image {
+            height: 200px;
+            overflow: hidden;
+        }
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        .product-card:hover .product-image img {
+            transform: scale(1.1);
+        }
+        .product-info {
+            padding: 1.5rem;
+        }
+        .product-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        .gallery-item {
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 250px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            background: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .gallery-item img, .gallery-item video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+            border-radius: 10px;
+            display: block;
+        }
+        .gallery-item video {
+            background: #000;
+        }
+        .gallery-item:hover img, .gallery-item:hover video {
+            transform: scale(1.1);
+        }
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+            padding: 1rem;
+            color: white;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+        /* Responsive video controls overlay on mobile */
+        @media (max-width: 600px) {
+            .gallery-item {
+                height: 180px;
+            }
+        }
+        .testimonials {
+            background-color: var(--coffee-dark);
+            color: white;
+        }
+        .testimonials h2 {
+            color: white;
+        }
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .testimonial-card {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+        .testimonial-author {
+            font-weight: 500;
+        }
+        .contact {
+            background-color: var(--primary);
+            color: white;
+        }
+        .contact h2, .contact h3 {
+            color: white;
+        }
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background-color: var(--accent);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+        .contact-details a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .contact-details a:hover {
+            color: var(--accent);
+        }
+        .contact-form {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            color: var(--text);
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        .form-control {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: inherit;
+            font-size: 1rem;
+        }
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+        .social-links a:hover {
+            color: var(--accent);
+        }
+        .breadcrumb {
+            padding: 1rem 0;
+            font-size: 0.9rem;
+        }
+        .breadcrumb a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+            .nav-menu {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                flex-direction: column;
+                background-color: var(--primary);
+                width: 100%;
+                text-align: center;
+                transition: 0.3s;
+                box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+                padding: 1rem 0;
+            }
+            .nav-menu.active {
+                left: 0;
+            }
+            .nav-menu li {
+                margin: 1.5rem 0;
+            }
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .section {
+                padding: 3rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">Datan Utukana Malo</a>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#licenses">Licenses</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <h1>Premium Ethiopian Coffee & Leaves Exporter</h1>
+            <p>Experience the authentic taste of Ethiopia's finest coffee, sourced directly from the highlands of Oromia and Guji regions. Exporting worldwide with passion and expertise.</p>
+            <a href="#contact" class="btn">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <div class="container breadcrumb">
+        <a href="#home">Home</a> > <span>Ethiopian Coffee Exporter</span>
+    </div>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Our Ethiopian Coffee Export</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Licensed Exporter of Premium Ethiopian Coffee</h3>
+                    <p>Datan Utukana Malo is a licensed and registered exporter of premium Ethiopian coffee and coffee leaves from the Oromia region. With deep roots in Ethiopia's rich coffee culture, we bring the world's finest coffee beans from the highlands of Guji, Ethiopia to global markets.</p>
+                    <p>Our commitment to quality, sustainability, and fair trade practices ensures that every cup of our coffee delivers an authentic Ethiopian experience while supporting local Oromo farming communities.</p>
+                    <p>We offer both dried and undried coffee varieties, preserving traditional processing methods that enhance the unique flavors and aromas of genuine Ethiopian coffee.</p>
+                </div>
+                <div class="about-image">
+                    <img src="farmer.jpg" alt="Coffee Farmer in Ethiopia Oromia Region">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Licenses Section -->
+    <section class="section licenses" id="licenses">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Export Licenses & Certifications</h2>
+                <p>Fully licensed and registered Ethiopian coffee exporter</p>
+            </div>
+            <div class="licenses-container">
+                <div class="license-card">
+                    <div class="license-image">
+                        <img src="license.jpg" alt="Coffee Export License">
+                        <div class="watermark">
+                            This is photo of Coffee Export license, 
+                        </div>
+                    </div>
+                    <div class="license-info">
+                        <h3>Export License</h3>
+                        <p>Official government-issued coffee export license authorizing international trade of Ethiopian coffee.</p>
+                    </div>
+                </div>
+                <div class="license-card">
+                    <div class="license-image">
+                        <img src="license registration.jpg" alt="Coffee Export Registration">
+                        <div class="watermark">
+                            This is photo of  Coffee export registration license 
+                        </div>
+                    </div>
+                    <div class="license-info">
+                        <h3>Registration Certificate</h3>
+                        <p>Formal registration as an authorized coffee exporter with the Ethiopian Coffee and Tea Authority.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="section products" id="products">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Ethiopian Coffee Products</h2>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="dried.jpg" alt="Dried Coffee Beans from Ethiopia">
+                    </div>
+                    <div class="product-info">
+                        <h3>Dried Coffee Beans</h3>
+                        <p>Sun-dried to perfection, our dried coffee beans from Ethiopia's Guji region offer a rich, full-bodied flavor with low acidity and notes of chocolate and spice.</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="undried.jpg" alt="Undried Coffee Beans from Oromia">
+                    </div>
+                    <div class="product-info">
+                        <h3>Undried Coffee Beans</h3>
+                        <p>Our undried coffee beans preserve their natural moisture, resulting in a brighter, more complex flavor profile with fruity and floral notes characteristic of Ethiopian coffee.</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="plantation.jpg" alt="Coffee Leaves from Ethiopia">
+                    </div>
+                    <div class="product-info">
+                        <h3>Coffee Leaves</h3>
+                        <p>Harvested from the same plants as our premium beans in Oromia, our coffee leaves are perfect for traditional Ethiopian coffee leaf tea, a healthy alternative beverage.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section" id="gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Coffee Production Process</h2>
+            </div>
+            <div class="gallery-grid">
+
+                <!-- VIDEO GALLERY ITEM: Women Handling Quality Control -->
+                <div class="gallery-item">
+                <div style="position:relative; width:100%; height:100%;">
+                    <iframe 
+                        src="https://www.youtube.com/embed/QTKyu6dJ9Kk" 
+                        title="Women Handling Quality Control" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                        style="width:100%; height:100%; border:0; border-radius:10px; display:block; background:#000;"
+                    ></iframe>
+                </div>
+                <div class="gallery-overlay">
+                    <h3>Women Handling Quality Control</h3>
+                    <p>Together ensuring quality of sun-dried coffee beans</p>
+                </div>
+            </div>
+                <!-- END VIDEO GALLERY ITEM -->
+
+                <div class="gallery-item">
+                    <img src="plantation2nd.jpg" alt="Coffee Plantation in Oromia Ethiopia">
+                    <div class="gallery-overlay">
+                        <h3>Ethiopian Highlands</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="Harvesting.jpg" alt="Harvesting Coffee in Guji">
+                    <div class="gallery-overlay">
+                        <h3>Harvesting</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3" alt="Processing Ethiopian Coffee">
+                    <div class="gallery-overlay">
+                        <h3>Processing</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="sun drying.jpg" alt="Drying Coffee in Sun">
+                    <div class="gallery-overlay">
+                        <h3>Sun Drying</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?ixlib=rb-4.0.3" alt="Packaging Ethiopian Coffee">
+                    <div class="gallery-overlay">
+                        <h3>Quality Control</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1595867818082-083862f3aaf4?ixlib=rb-4.0.3" alt="Export Ready Ethiopian Coffee">
+                    <div class="gallery-overlay">
+                        <h3>Export Ready</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Our Clients Say</h2>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        <p>"The quality of Ethiopian coffee from Datan Utukana Malo is exceptional. Their Guji region coffee has become our best seller!"</p>
+                    </div>
+                    <div class="testimonial-author">- Maria L., Coffee Shop Owner, Italy</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        <p>"As an importer of specialty coffees, I appreciate their commitment to authentic Ethiopian coffee exports and sustainable practices."</p>
+                    </div>
+                    <div class="testimonial-author">- James T., Coffee Importer, USA</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        <p>"We've been working with Datan for years. Their Oromia coffee consistently exceeds our quality expectations."</p>
+                    </div>
+                    <div class="testimonial-author">- Sophie M., Distributor, Germany</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p>Reach out to us for orders, inquiries, or partnerships</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Call Us</h4>
+                            <a href="tel:+251911234567">+251 911 234 567</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email Us</h4>
+                            <a href="mailto:info@datancoffee.com">info@datancoffee.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-telegram"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Telegram</h4>
+                            <a href="https://t.me/templeofGod" target="_blank">@templeofGod</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Adola Woyu, Guji Zone, Oromia, Ethiopia</p><br>
+                            <p>Specific location is Sama Hindale</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="logo">Datan Utukana Malo</div>
+            <p>Exporting the finest Ethiopian coffee from Oromia and Guji regions to the world</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="https://t.me/templeofGod" target="_blank"><i class="fab fa-telegram"></i></a>
+            </div>
+            <p>&copy; 2023 Datan Utukana Malo. All Rights Reserved. | Ethiopian Coffee Exporter</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileMenuBtn.innerHTML = navMenu.classList.contains('active') ? 
+                '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+        
+        // Form submission
+        const contactForm = document.getElementById('contactForm');
+        
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            // In a real application, you would send this data to a server
+            // For demonstration, we'll just show an alert
+            alert(`Thank you ${name}! Your message has been received. We will contact you at ${email} soon.`);
+            
+            // Reset form
+            contactForm.reset();
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
